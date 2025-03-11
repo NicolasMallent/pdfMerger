@@ -4,9 +4,9 @@ import sys
 import argparse
 
 # Vérifier la version de Python
-python_version = sys.version_info[:2]  # Exemple : (3, 6)
+python_version = sys.version_info[:2]
 
-if python_version <= (3, 6):  # Python 3.6 ou moins → PyPDF2
+if python_version <= (3, 6):
     from PyPDF2 import PdfFileMerger
     def concatener_pdfs(fichiers_pdf, sortie_pdf):
         merger = PdfFileMerger()
@@ -22,7 +22,7 @@ else:  # Python 3.7 ou plus → Utilisation de pypdf avec PdfWriter
     def concatener_pdfs(fichiers_pdf, sortie_pdf):
         writer = PdfWriter()
         for fichier in fichiers_pdf:
-            writer.append(fichier)  # PdfWriter remplace PdfMerger
+            writer.append(fichier) 
         writer.write(sortie_pdf)
         writer.close()
         print(f"Fichier {sortie_pdf} généré avec succès.")
@@ -37,9 +37,6 @@ def main():
     if len(args.fichiers) < 2:
         print("Erreur : Il faut au moins deux fichiers PDF en entrée.", file=sys.stderr)
         sys.exit(1)
-
-    # Exemple d'utilisation
-    #fichiers = ["/home/nimall/Documents/Perso/Atelier_ferme_nuria.pdf", "/home/nimall/Documents/Perso/Atelier_vin_nuria.pdf"]
     concatener_pdfs(args.fichiers, args.output)
 
 if __name__ == '__main__':

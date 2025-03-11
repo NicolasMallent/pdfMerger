@@ -1,6 +1,28 @@
 # pdfMerger
 Outil pour concatener/merger des fichiers PDF
 
+## Windows
+### Outils
+Les outils à avoir pour lancer le script:
+- VSCode: https://code.visualstudio.com/
+- Python: la version compatible avec votre ordinateur
+- Le projet pdfMerger à télécharger en .zip
+
+### Setup
+- Décompresser pdfMerger
+- Ouvrir VSCode
+    - File -> Add Folder to Workspace et selectionner pdfMerger
+    - VSCode va vous proposer d'installer l'extension Python, faites le.
+![Python_extension](ressources/Python_extension.png)
+    - Ouvrir pdfMerger.py
+    - Click droit n'importe où dans le fichier et cliquer sur "Run Python" -> "Run Python File in Terminal"
+![Run_python](ressources/Run_python_terminal.PNG)
+    - Ca ne va pas marcher et c'est normal car il vous manque pypdf.
+    - Installer pypdf: `pip install pypdf`
+    - Si il vous propose de mettre à jour pip, executez la ligne qu'il vous donne.
+    - Vous pouvez maintenant executer le programme:
+`python3 pdfMerger\pdfMerger.py "path\ficher1.pdf" "path\fichier2.pdf" -o path\output.pdf`
+
 ## Linux
 ### Setup
 ```
