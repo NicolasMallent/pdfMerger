@@ -20,8 +20,10 @@ Les outils à avoir pour lancer le script:
     - Ca ne va pas marcher et c'est normal car il vous manque pypdf.
     - Installer pypdf: `pip install pypdf`
     - Si il vous propose de mettre à jour pip, executez la ligne qu'il vous donne.
-    - Vous pouvez maintenant executer le programme:
-`python3 pdfMerger\pdfMerger.py "path\ficher1.pdf" "path\fichier2.pdf" -o path\output.pdf`
+    - Vous pouvez maintenant executer le programme:  
+`python3 pdfMerger\pdfMerger.py "path\ficher1.pdf" "path\fichier2.pdf" -o path\output.pdf`  
+Il faut au minimum deux fichiers mais le programme fonctionne avec autant de fichier que vous voulez.
+
 
 ## Linux
 ### Setup
