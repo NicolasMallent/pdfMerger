@@ -13,7 +13,7 @@ Les outils à avoir pour lancer le script:
 - Ouvrir VSCode
     - File -> Add Folder to Workspace et selectionner pdfMerger
     - VSCode va vous proposer d'installer l'extension Python, faites le.
-![Python_extension](ressources/Python_extension.png)
+![Python_extension](ressources/Python_extension.PNG)
     - Ouvrir pdfMerger.py
     - Click droit n'importe où dans le fichier et cliquer sur "Run Python" -> "Run Python File in Terminal"
 ![Run_python](ressources/Run_python_terminal.PNG)
